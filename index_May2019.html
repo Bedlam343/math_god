@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back  to Top</button>
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div onclick="dropdown()" class="dropdown-content">
+    <a href="#button1"> Sphere</a>
+    <a href="#rectAandP">Square</a>
+    <a href="#sAandP">Rectangle</a>
+    <a href="#Trainglee">Traingle</a>
+    <a href="#cuboid">Cuboid</a>
+  </div>
+</div>
+
+<div class="everything">
+<div class="container"> 
+  <div class="shake">
+<h1 class="title"> MATH GOD</h1>
+  </div>
+  <h2 class="line2"></h2>
+  <br>
+  <div class="shake-slow">
+  <h2 id="algebra"> Special Algebra Exapansions</h2>
+  </div>
+  <div class="row big">
+    <div class="col sideL">
+      <h4>a:  <input type="number" id="a" class="inputs"></h4>
+       </div>
+    <div class="col text-center"> </div>
+      <div class="col-auto"> 
+        <h4>b:  <input type="number" id="b" class="inputs "></h4> </div>
+  </div>
+  <div class="row">
+    <div class="col"></div>
+    <div class-"col-5">
+      <br>
+  <button onclick="calculate()" class="rounded" id="button1"> Find </button>
+    </div>
+    <div class="col"></div>
+  </div>
+<br>
+<br>
+ <div class="row">
+   
+    <div class="col sideL">
+      <h4> (a + b)^3:  <span id="a+b^3"></span> </h4>
+   </div>
+      <div class="col text-center"></div>
+    
+    <div class="col-auto">
+      <h4>  (a - b)^3: <span id="a-b^3"></span> </h4>
+   
+ 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col sideL">
+      <h4>  a^3 + b^3:  <span id="a3+b3"></span> </h4>
+  </div>
+    <div class="col text-center"></div>
+      <div class="col-auto">
+     <h4>  a^3 - b^3: <span id="a3-b3"></span> </h4>
+  </div>
+
+  </div>
+ <br>
+  <h2 class="line"></h2>
+  <br>
+  <div class="shake-slow">
+  <h2 id="sphere"> Sphere</h2>
+  </div>
+  <div class="row big">
+    <div class="col sideL"></div>
+    <div class="col text-center">
+      <h4 id="radius"> r: <input type="number" class="inputs" id="r"</h4>
+    </div>
+      <div class="col sideR"></div>
+  </div>
+    
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-" id="sphereCol">
+        <br>
+        <button onclick="sphere()" class="rounded" id="sAandP"> Find</button> </div>
+      <div class="col"></div>
+    </div>
+    <br>
+    
+    
+    <div class="row">
+      <div class="col sideL">
+        
+      </div>
+      <div class="col text-center"> <h4 id="areaSphere"> Area: <span id="sArea"></span> </h4></div>
+      <div class="col sideR"> 
+      </div>
+      
+    </div>
+    <br>
+    
+    <div id="line3"></div>
+    
+    <br>
+    <div class="shake-slow">
+    <h2 id="rect"> Rectangle </h2>
+    </div>
+    <div class="row big">
+      <div class="col sideL">
+        <h4 id="lengthR"> L: <input type="number" id="L" class="inputs">
+      </div>
+        <div class="col text-center"></div>
+        <div class="col-auto"> 
+          <h4 id="wdithR"> W: <input type="number" class="inputs" id="W">
+        </div>
+        
+      
+    </div>
+        <div class="row">
+      <div class="col"></div>
+      <div class="col-" id="rect">
+        <br>
+        <button onclick="rectangle()" class="rounded" id="rectAandP"> Find</button> </div>
+      <div class="col"></div>
+    </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col sideL"> 
+            <h4 id="areaR"> Area: <span id="AreaR"></span> </h4>
+          </div>
+            <div class="col text-center"></div>
+            <div class="col-auto">
+              <h4 id="perimeterR"> Perimeter: <span id="PerimeterR"> </span> </h4>
+            </div>
+          
+        </div>
+        <br>
+      
+        <div id="line4"></div>
+        <br>
+        <div class="shake-slow">
+        <h2 id="square"> Square </h2>
+        </div>
+        <div class="row big">
+          <div class="col sideL"></div>
+          <div class="col text-center">
+            <h4 id="sideS"> s: <input type="number" class="inputs" id="s"> </h4>
+          </div>
+          <div class="col sideR"></div>
+          
+        </div>
+         <div class="row">
+      <div class="col"></div>
+      <div class="col-" id="squares">
+        <br>
+        <button onclick="square()" class="rounded" id="sqAandP"> Find</button> </div>
+      <div class="col"></div>
+    </div>
+        <br>
+        <br>
+        <div class="row big">
+          <div class="col sideL">
+            <h4 id="squareArea"> Area: <span id="squareA"></span> </h4>
+          </div>
+          <div class="col text-center"></div>
+          <div class="col-auto">
+            <h4 id="squarePeri"> Perimeter: <span id="squareP"></span> </h4>         </div>
+           </div>
+        <br>
+        <div id="line5"></div>
+        <br>
+        <div class="shake-slow">
+        <h2 id="traingle"> Traingle </h2>
+        </div>
+        <div class="row big">
+          <div class="col sideL">
+            <div class="row">
+              <div class="col sideL"></div>
+              <div class="col text-center"> <h3 id="AreaTR"> Area: <span id="TraingleArea"></span> </h3></div>
+              <div class="col sideR"></div>
+            </div>
+            <div class="row">
+              <div class="col sideL"> <h4 id="b21" class="texts">b: <input type="number" id="b2" class="inputs"> </h4> </div>
+              <div class="col text-center"></div>
+              <div class="col sideR"> <h4 id="h2" class="texts"> h: <input type="number" id="h" class="inputs"</h4></div>
+                 </div>
+              <br>
+              <div class="row">
+                <div class="col sideL"></div>
+                <div class="col text-center"> <button class="rounded" onclick="trArea()" id="Trainglee"> Find</button> </div>
+                <div class="col sideR"></div>
+              </div>
+          </div>
+          <div class="col text-center" id="TRC"></div>
+          <div class=" col sideR">
+            <div class="row">
+              <div class="col sideL"></div>
+              <div class="col text-center"> <h3 id="PerimeterTR"> Perimeter: <span id="PeriTR"></span></div>
+                <div class="col sideR"></div>
+            </div>
+              <div class="row">
+                <div class="col sideL">
+                  <h4 id="Side1" class="texts"> s1: <input type="number" id="s1" class="inputs"></h4>
+                </div>
+                <div class="col text-center"></div>
+                <div class="col sideR"> <h4 id="Side2" class="texts"> s2: <input type="number" id="s2" class="inputs"> </h4>
+                
+                </div>
+              </div>
+              <div class="row">
+                <div class="col sideL"></div>
+                <div class="col text-center">
+                  <h4 id="Side3" class="texts"> s3: <input type="number" id="s3" class="inputs"> </h4>
+                </div>
+                <div class="col sideR"></div>
+                
+                </div>
+              <div class="row">
+                <div class="col sideL"></div>
+                <div class="col text-center">
+                  <button class="rounded" onclick="periTR()" id="PerimeterTRA" > Find </button>
+                </div>
+                <div class="col sideR"></div>
+              </div>
+              </div>
+            </div>
+            <br>
+            <div id="line6"></div>
+            <br>
+            <div class="shake-slow"> <h2 id="cuboid"> Cuboid</h2>
+            </div>
+              
+              <div class="row">
+                <div class="col-auto mr-auto">
+                  <h4 id="LLL"> L: <input type="number" class="inputs" id="lCuboid"></h4>
+                </div>
+                <div class="col text-center">
+                  <h4 id="WWW"> W: <input type="number" class="inputs" id="wCuboid"> </h2>
+                </div>
+                <div class="col-auto">
+                  <h4 id="HHH"> H: <input type="number" class="inputs" id="hCuboid"></h4>
+                </div>
+              </div>
+            <br>
+            <div class="row">
+              <div class="col sideL"></div>
+              <div class="col text-center">
+                <button class="rounded" onclick="Cuboid()" id="cuboid123"> Find</button>
+              </div>
+              <div class="col sideR"></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col sideL">
+                <h4 class="texts" id="Carea"> Area: <span id="AreaCuboid"></span></h4>
+              </div>
+                <div class="col text-center"></div>
+                <div class="col-auto">
+                  <h4 id="Pcuboid" class="texts"> Perimeter: <span id="PeriCuboid"></span></h4>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+        </div>
+          
+          
+          
+          
+          
+          
+          
+        
+
+</body>
+</html>
